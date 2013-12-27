@@ -14,8 +14,8 @@ get-elm:
 	mkdir data
 	# phospho ELM dump
 	wget http://phospho.elm.eu.org/dumps/phosphoELM_all_latest.dump.tgz -O - | tar xvz
-	# uniprot -> organism table, via UCSC
-	wget http://hgwdev.soe.ucsc.edu/~max/pbeltrao/spOrgs.tar.gz 
+	# uniprot -> organism table, via UCSC -> added to git, no need to download anymore
+	# wget http://hgwdev.soe.ucsc.edu/~max/pbeltrao/spOrgs.tar.gz 
 	# convert phosphoelm to more reasonable format
 	python impPhosphoElm.py > data/pelm.tab
 
